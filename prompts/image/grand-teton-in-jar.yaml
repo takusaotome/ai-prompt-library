@@ -1,0 +1,62 @@
+# Grand Teton in Glass Jar — hyper-realistic · isometric · high-detail (v1.0)
+image_type: grand_teton_jar_diorama_v1
+
+general:
+  orientation: vertical              # 9 : 16 portrait
+  aspect_ratio: 0.5625
+  size: { width: "2048px", height: "3640px" }
+  quality: ultra_high_resolution
+  file_format: png
+  safe_zone: none
+  typography: {}                     # no text overlays
+
+# ─ Theme ─
+theme:
+  name: GlassJarGrandTeton
+  background:
+    type: pure_white_surface
+    colors: pristine_white
+    transparent: false
+  overlays:
+    - { type: subtle_soft_shadow, opacity: 0.05 }
+
+  focal_motif:
+    - clear_glass_mason_jar_with_metal_lid          # ant-farm-style cutaway
+
+# == Scene ==
+scene:
+  main_subject: >
+    A meticulously crafted isometric 3D miniature of Grand Teton National Park—
+    featuring the jagged, snow-tipped peaks of Grand Teton, Mount Owen, and
+    Middle Teton rising above a mirror-still Jenny Lake, with alpine meadows,
+    lodgepole pines, and scattered wildflowers—encased inside a crystal-clear
+    glass jar.  The lower section reveals a cross-section of glacial moraine,
+    rocky scree slopes, and solid granite bedrock, rendered with lifelike
+    textures and depth.
+  perspective: slightly_elevated_isometric
+  mood: crisp_and_majestically_grand
+  style: hyper_realistic_handcrafted_model
+  lighting:
+    type: clear_alpine_daylight
+    direction: 40_degree_key_light
+    color_temperature: 6000
+    depth_of_field: shallow
+
+# == Materials & Details ==
+materials:
+  jar_shell: optical_grade_glass_with_soft_caustics
+  mountain_peaks: hand_painted_resin_with_matte_snow_caps
+  water_body: translucent_epoxy_resin_with_mirror_gloss
+  vegetation: fine_static_fiber_and_micro_laser_cut_conifers
+  meadow_floor: static_grass_and_wildflower_tufts
+  strata_layers:
+    - nutrient_rich_alpine_soil_with_rootlets
+    - mixed_glacial_till_with_small_pebbles
+    - coarse_granite_bedrock
+
+# == Post-processing ==
+post_processing:
+  color_grading: crisp_mountain_palette
+  vignette: soft_radial
+  grain: minimal
+  

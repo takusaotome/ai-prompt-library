@@ -1,0 +1,43 @@
+prompt: |
+  Front-facing Shiba Inu in a rough, hand-drawn Japanese mascot (yuru-chara) style,
+  sitting politely with only the two front legs visible, **no back legs at all**.
+  ▸ Proportions & posture:
+      – The dog is seated with a **very large, vertically long head** (about 75% of total height), and a small, very short rectangular body (about 25%).
+      – The **entire head, including chin and jaw, is fully enclosed with an extremely thick, uneven, hand-drawn black outline**—no gaps anywhere around the head.
+      – The face is vertically elongated (not round or chubby).
+      – Only two straight, thick front legs are visible, spaced apart, attached directly to the lower body. **No back legs or side legs visible.**
+  ▸ Outline:
+      – Use extremely thick, highly uneven, hand-drawn black lines (at least 12–15% of width).
+      – The **head's outline must go completely around the face, especially along the jaw and chin.**
+      – Body is also fully outlined; **no extra legs, paws, or toes drawn.**
+      – Corners and ends of lines are rounded, overlapping, and rough—like a child’s marker drawing.
+  ▸ Face:
+      – Eyes: two small solid black dots, close together and near the nose.
+      – Nose: very large solid black oval, low on the face, touching the white muzzle.
+      – Mouth: thick, short, black U-shaped line just under the nose; tongue peeking out, small and round.
+      – **White muzzle area has no black outline around it; it is a white oval blended into the face, not circled.**
+  ▸ Colors:
+      – Fur: #B37829 (warm brown)
+      – White: #FFFFFF
+      – Tongue: #F89C7D
+  ▸ Chest patch:
+      – White patch from neck down between front legs, wide “Y” or loose triangle shape.
+  ▸ Tail:
+      – Short, simple, curved stub sticking out to the right, outlined thickly.
+  ▸ Ears:
+      – Two upright triangles, thick outline, slight asymmetry OK.
+  ▸ Canvas:
+      – Flat 2-D illustration on a transparent canvas or plain white background, no extra elements.
+style: "yuru-chara, flat cartoon, extremely rough doodle, child-drawn"
+medium: "digital illustration"
+color_palette: ["#B37829", "#FFFFFF", "#000000", "#F89C7D"]
+background: "transparent"
+aspect_ratio: "2:3 portrait"
+quality: "intentionally naive, high-resolution"
+negative_prompt: |
+  gradients, shading, glossy highlights, soft shadows, paper texture,
+  vector-smooth lines, animal toes, realistic anatomy, background elements,
+  watermark, text, fingered paws, animal legs, neat or perfect outline, symmetry, round face, fat cheeks,
+  any gap in the head outline, incomplete jaw or chin outline, thin lines,
+  **back legs visible, side legs visible, or paws beside the body**,
+  black outline around the white muzzle area
