@@ -1,84 +1,84 @@
-# Prompt Library
+# AIプロンプトライブラリ
 
-このリポジトリは、日々作成・使用しているプロンプトを共有・管理するためのライブラリです。AIを活用した業務効率化や創造的な作業のためのプロンプトをカテゴリ別に整理しています。
+このリポジトリは、様々な業務で使用できるAIプロンプトのコレクションです。
 
-## カテゴリ一覧
+## 目次
 
-### [システム開発](system-development/)
+- [AIプロンプトライブラリ](#aiプロンプトライブラリ)
+  - [目次](#目次)
+  - [システム開発](#システム開発)
+  - [サービスデスク](#サービスデスク)
+  - [営業分析](#営業分析)
+  - [ニュース分析](#ニュース分析)
+  - [ITコンサルティング](#itコンサルティング)
+  - [投資](#投資)
+  - [競合分析](#競合分析)
+  - [オートメーション](#オートメーション)
+  - [貢献](#貢献)
+  - [ライセンス](#ライセンス)
+  - [注意事項](#注意事項)
+
+## システム開発
+
+システム開発プロセスを支援するプロンプト集です。
+
 - [システム開発の要件定義](system-development/システム開発要件定義.md)
 - [システム開発の見積もり](system-development/システム開発見積もり.md)
 - [システム開発の見積もり予測](system-development/システム開発見積もり予測.md)
+- [コーディングプロンプトリスト](system-development/vibe-coding-prompt-library.md)
 
-### [サービスデスク](service-desk/)
-- [サービスデスクの運用管理](service-desk/サービスデスク.md)
+## サービスデスク
 
-### [営業分析](analysis/)
-- [多点商談上分析](analysis/多点商談上分析.md)
+サービスデスク業務を支援するプロンプト集です。
+
+- [サービスデスクの問い合わせ対応](service-desk/service-desk-inquiry-response.md)
+
+## 営業分析
+
+営業活動の分析と改善を支援するプロンプト集です。
+
+- [多点商談上分析](analysis/multi-point-negotiation-analysis.md)
 - [異常検知改善](analysis/generic_anomaly_improvement_prompt.yml)
 
-### [ニュース分析](news-analysis/)
-- [AIニュースダイジェスト](news-analysis/AIニュースダイジェスト.md)
+## ニュース分析
 
-### [ITコンサルティング](it-consulting/)
-- [AI競合提案書テンプレート](it-consulting/AI_競合提案書テンプレート_第5版.md)
-- [ITIL 4コンサル](it-consulting/ITIL%204コンサル.md)
+ニュース記事の分析と要約を支援するプロンプト集です。
 
-### [投資](investment/)
-- [投資分析](investment/投資分析.md)
+- [AIニュースダイジェスト](news-analysis/ai-news-digest.md)
 
-### [競合分析](competitor%20analysis/)
-- [競合分析（アナリスト向け）](competitor%20analysis/競合分析（アナリスト向け）.md)
-- [競合ウォッチ日次モニタリング](competitor%20analysis/competitor_watch_daily_monitor.yml)
+## ITコンサルティング
 
-### [画像生成](image/)
-- [グランドティトン in ジャー](image/grand-teton-in-jar.yaml)
-- [手書き柴犬](image/hand-write-shiba-inu.yaml)
+ITコンサルティング業務を支援するプロンプト集です。
 
-### [オートメーション](automation/)
-- [RPA自動化](automation/RPA自動化.md)
+- [AI競合提案書テンプレート](it-consulting/ai-competitive-proposal-template.md)
+- [ITIL 4コンサル](it-consulting/itil4-consulting.md)
 
-## プロンプトの使い方
+## 投資
 
-1. 目的に合ったカテゴリを選択
-2. 該当するプロンプトファイルを開く
-3. プロンプトの内容をコピー
-4. 必要に応じてパラメータを調整
-5. AIツールに貼り付けて使用
+投資分析と意思決定を支援するプロンプト集です。
 
-## プロンプトの形式
+- [投資分析](investment/investment-analysis.md)
 
-各プロンプトファイルは以下の形式で記述されています：
+## 競合分析
 
-```markdown
-# プロンプト名
+競合分析と市場調査を支援するプロンプト集です。
 
-## 目的
-このプロンプトの目的や用途
+- [競合分析（アナリスト向け）](competitor-analysis/competitor-analysis-for-analysts.md)
+- [競合ウォッチ日次モニタリング](competitor-analysis/competitor_watch_daily_monitor.yml)
 
-## 使用方法
-プロンプトの使用方法や注意点
+## オートメーション
 
-## プロンプト
-```
-実際のプロンプト内容
-```
+業務自動化を支援するプロンプト集です。
 
-## 使用例
-実際の使用例や結果
-```
+- [AI自動化アシスタント](automation/ai-automation-assistant.md)
 
-## 貢献方法
+## 貢献
 
-1. このリポジトリをフォーク
-2. 新しいブランチを作成
-3. プロンプトを追加または改善
-4. プルリクエストを作成
-
-詳細な貢献ガイドラインは[CONTRIBUTING.md](CONTRIBUTING.md)を参照してください。
+新しいプロンプトの追加や既存のプロンプトの改善にご協力ください。詳しくは[貢献ガイドライン](CONTRIBUTING.md)をご覧ください。
 
 ## ライセンス
 
-MITライセンスの下で公開されています。詳細は[LICENSE](LICENSE)ファイルを参照してください。
+このプロジェクトは[MITライセンス](LICENSE)の下で公開されています。
 
 ## 注意事項
 
