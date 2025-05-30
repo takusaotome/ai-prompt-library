@@ -22,12 +22,11 @@
 
 システム開発プロセスを支援するプロンプト集です。
 
-- [システム開発の要件定義](system-development/システム開発要件定義.md)
+- [システム開発要件定義書生成](system-development/pmbok_requirements_definition_prompt.yaml)
 - [システム開発の見積もり](system-development/システム開発見積もり.md)
 - [システム開発の見積もり予測](system-development/システム開発見積もり予測.md)
 - [コーディングプロンプトリスト](system-development/vibe-coding-prompt-library.md)
 - [Salesforce Fit-Gap分析](system-development/salesforce-fit-and-gap.yaml)
-- [PMBOK準拠要件定義書生成](system-development/pmbok_requirements_definition_prompt.yaml)
 
 ## サービスデスク
 
