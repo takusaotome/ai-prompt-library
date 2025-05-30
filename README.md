@@ -26,6 +26,7 @@
 - [システム開発の見積もり](system-development/システム開発見積もり.md)
 - [システム開発の見積もり予測](system-development/システム開発見積もり予測.md)
 - [コーディングプロンプトリスト](system-development/vibe-coding-prompt-library.md)
+- [Salesforce Fit-Gap分析](system-development/salesforce-fit-and-gap.yaml)
 
 ## サービスデスク
 
@@ -37,7 +38,7 @@
 
 営業活動の分析と改善を支援するプロンプト集です。
 
-- [多点商談上分析](analysis/multi-point-negotiation-analysis.md)
+- [多拠点売上分析](analysis/multi-point-negotiation-analysis.md)
 - [異常検知改善](analysis/generic_anomaly_improvement_prompt.yml)
 
 ## ニュース分析

@@ -1,0 +1,69 @@
+# ================================================================
+#  Prompt: “Generate Feature List + Fit-Gap Matrix from Meeting Notes”
+#  Purpose:  Transform raw meeting minutes into a structured,
+#            prioritised feature matrix (with Fit-Gap, phase, effort).
+#  Usage:    Replace <<MEETING_MINUTES>> with the verbatim notes.
+# ================================================================
+
+system: |
+  You are an experienced Salesforce solution architect and business analyst.
+  Your task is to read meeting minutes, extract every requirement, and produce
+  a concise but comprehensive feature list with Fit-Gap analysis.
+  Follow the step-by-step workflow described by the user.
+
+user: |
+  ## Input
+```
+
+<\<MEETING\_MINUTES>>
+
+```
+
+## Workflow (perform sequentially)
+1. **Extract Requirements**  
+   - Parse the minutes and list every distinct requirement / pain-point as a single-sentence bullet.  
+   - Keep the language business-friendly.
+
+2. **Group into Major Categories**  
+   - Typical buckets: “CRM入力項目・テンプレート”, “赴任者受け入れタスク管理”,  
+     “リマインド・メール”, “画面 UI”, “履歴・データ管理”,  
+     “Ex Project 関連”, “Company Rule 管理”, “Opportunity / 商談”,  
+     “Agent 管理”, “Rent 統合運用”.  
+   - Add or rename buckets if the minutes suggest new themes.
+
+3. **Assign Priority**  
+   - H = Go-Live 必須 / M = Post-Go-Live / L = Future idea.  
+   - Base the judgement on business impact & legal / operational urgency inferred from the minutes.
+
+4. **Evaluate Fit-Gap**  
+   - Use these four codes:  
+     - OOB  … Standard Salesforce setup only  
+     - CFG  … Click-based config (Flow, Dynamic Forms, etc.)  
+     - CST  … Custom dev (Apex, LWC, integration)  
+     - INT  … Third-party / AppExchange integration  
+   - Choose the *highest* level needed (e.g., if 95 % is OOB but 5 % needs Apex, mark =CST).
+
+5. **Propose Implementation Phase**  
+   - Phase 1 = Include in initial MVP scope (usually all Priority H items).  
+   - Phase 2 = Deliver in the first enhancement wave.  
+   - Phase 3+ = Later / backlog.  
+   - Adjust if dependencies imply a different rollout order.
+
+6. **Rough Effort (人日)**  
+   - Give a **whole-number estimate** for each line based on typical Lightning implementation speed.  
+     - 0.5 – Minor config  
+     - 1   – Standard Flow / list view / report  
+     - 2-3 – Complex Flow, custom object with automation  
+     - 4+ – Apex/LWC or integration.
+
+7. **Output Table**  
+   - Provide a Markdown table with the following columns:  
+     | # | 大項目 | 機能 / 要望 | Priority | Fit&Gap | 対応方針（業務向け） | 技術案（開発向け） | 工数 (人日) | Phase |  
+   - Keep rows sorted by #.  
+   - Summarise 対応方針 in ≤ 120 chars; summarise 技術案 likewise.
+
+8. **Append Glossary**  
+   - After the table, include a short glossary that defines Priority and Fit-Gap codes (same wording as above).
+
+## Output
+Return only the Markdown content (table + glossary). Do **not** wrap the answer in triple back-ticks.
