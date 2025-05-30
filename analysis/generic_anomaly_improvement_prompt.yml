@@ -104,7 +104,7 @@ format: |
 
 ###############################################################################
 
-## entity\_master\_placeholder
+## entity_master_placeholder
 
 ```text
 <<<ENTITY_MASTER>>>
