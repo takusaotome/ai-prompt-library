@@ -41,6 +41,7 @@
 
 - [多拠点売上分析](analysis/multi-point-negotiation-analysis.md)
 - [異常検知改善](analysis/generic_anomaly_improvement_prompt.yml)
+- [契約書分析](analysis/contract-analysis/summarize_lease_agreement.md) — 契約書の重要なポイントを自動で要約・分析
 
 ## ニュース分析
 
@@ -52,8 +53,9 @@
 
 ITコンサルティング業務を支援するプロンプト集です。
 
-- [AI競合提案書テンプレート](it-consulting/ai-competitive-proposal-template.md)
-- [ITIL 4コンサル](it-consulting/itil4-consulting.md)
+- [AI競合提案書テンプレート](it-consulting/AI_競合提案対策ガイド_戦略メッセージ5本柱.md)
+- [ITIL 4コンサル](it-consulting/ITIL 4コンサル.md)
+- [議事録自動生成プロンプト](it-consulting/meeting_minutes.md) — 会議の文字起こしから要点・アクションアイテム・決定事項を自動で整理
 
 ## 投資
 
