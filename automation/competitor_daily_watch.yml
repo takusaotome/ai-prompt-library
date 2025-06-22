@@ -1,0 +1,59 @@
+# ──────────────────────────────────────────────────────────────
+#  Competitor-Daily Watch Automation Prompt  v1.0
+#  定時実行用（n8n / Zapier / Dify）
+# ──────────────────────────────────────────────────────────────
+name: competitor_daily_watch
+description: >
+  Based on the input "Industry" or "Company," automatically identify the top
+  relevant competitors, then monitor and analyze their latest news and official
+  releases from the past 24 hours.  An executive-ready summary is generated
+  every morning.
+
+schedule:
+  timezone: America/Los_Angeles   # PDT / PST
+  time: "07:00"                   # 毎朝実行
+  frequency: daily
+
+###############################################################################
+prompt: |
+  You are an “Industry Analyst” for the following business:
+  - Industry: {{industry}}
+  - Company (if specified): {{company}}
+
+  ### Step 1 – Identify Key Competitors
+  - List 5–10 major competitors active in the US market.
+  - Cover both direct rivals and significant substitutes.
+  - For each, note its primary business line and one differentiator.
+
+  ### Step 2 – Collect Last-24-Hour News
+  - For every competitor, gather up to 10 items published in the past 24 h:
+      • official press releases • SEC filings • reputable business media
+  - Capture **Title, Source, URL, Publication UTC time, Type**.
+
+  ### Step 3 – Categorize & Prioritize
+  - Tag each item: Strategy / Product Launch / Financials / Regulatory /
+    Partnership / Risk / Other.
+  - Highlight the **Top 3 developments** most likely to affect {{company}}
+    and justify each in 2 sentences.
+
+  ### Step 4 – Executive Summary
+  - Summarize sentiment shifts & competitive threats/opportunities ≤150 words.
+  - End with **Recommended next actions** (≤5 bullets) for leadership.
+
+  ### Output Format (Markdown)
+  ```markdown
+  ## Executive Summary
+  <150-word paragraph>
+
+  ## Top 3 Developments
+  1. **<Headline>** — <impact explanation>  
+     Source: <URL>
+
+  ## Full Feed
+  | Competitor | Date (UTC) | Title | Tag | Source |
+  |------------|-----------|-------|-----|--------|
+  | …          | …         | …     | …   | …      |
+
+  ## Recommended Actions
+  - …
+  - …

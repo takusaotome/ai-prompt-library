@@ -23,6 +23,7 @@
 システム開発プロセスを支援するプロンプト集です。
 
 - [システム開発要件定義書生成](system-development/pmbok_requirements_definition_prompt.yaml)
+- [プロジェクト進捗レポート生成](system-development/プロジェクト進捗レポート.md)
 - [システム開発の見積もり](system-development/システム開発見積もり.md)
 - [システム開発の見積もり予測](system-development/システム開発見積もり予測.md)
 - [システム開発リスク分析](system-development/system-development-risk-analysis.yaml)
